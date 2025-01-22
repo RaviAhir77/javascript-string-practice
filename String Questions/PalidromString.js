@@ -6,7 +6,7 @@ function isPalidrom(str){
     return str === reverse;
 }
 
-console.log(isPalidrom('raars'))
+console.log('first answer : ',isPalidrom('raar'))
 
 
 // with a for loop
@@ -23,14 +23,17 @@ function isPalidroms(str){
     return str === Rstorage;
 }
 
-console.log(isPalidroms('raar'));
+console.log('second answer : ',isPalidroms('raar'));
 
 
 // let check with a pointers
 
 
 function isPalidromm(str){
-    for(let left = 0,right = str.length - 1; left < right; left++ , right--){
+    let left = 0;
+    let right = str.length - 1;
+
+    for(left,right;   left < right;   left++,right--){
         if(str[left] !== str[right]){
             return false
         }
@@ -38,4 +41,4 @@ function isPalidromm(str){
     return true
 }
 
-console.log(isPalidromm('raar'))
+console.log('third answer :',isPalidromm('raar'))
