@@ -27,3 +27,12 @@ function replacers(str){
 }
 
 console.log('second function :', replacers('hello world nothing'));
+
+
+//let replace a word first letter with a capital letter 
+
+function capital(str){
+    return str.replace(/\b\w/g,(c) => c.toUpperCase())
+}
+
+console.log(capital('hellow world'))
